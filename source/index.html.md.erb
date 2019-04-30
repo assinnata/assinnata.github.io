@@ -1,0 +1,115 @@
+---
+title: API Reference
+
+language_tabs: # must be one of https://git.io/vQNgJ
+  - shell
+
+toc_footers:
+  - <a href='https://twitter.com/KamiMatteo' target="_blank">twitter</a>
+  - <a href='https://instagram.com/bitkami' target="_blank">ig</a>
+  - <a href='https://t.me/kamiteo' target="_blank">tg</a>
+  - <a href='https://t.me/bitkami' target="_blank">tg channel</a>
+
+search: true
+---
+
+# Introduction
+
+Welcome to my documentation style website, here you will find cool stuff about me and my work.
+
+# User
+
+## whoami
+
+```shell
+whoami
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+   "success":true,
+   "result":{
+     "name": 'Matteo Assinnata',
+     "area": 'Lugano, Canton of Ticino, Switzerland',
+     "nickname": ['kami', 'bitkami'],
+     "title": 'CTO & Founder @ Kami Swiss SA',
+     "email": ['k@bitkami.io', 'matteo@assinnata.com']
+   }
+}
+```
+
+## Experience
+
+```shell
+finger kami
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+   "success":true,
+   "result":[{
+     "area": 'Lugano, Canton of Ticino, Switzerland',
+     "title": 'CTO & Founder @ Kami Swiss SA',
+     "from": 'Apr 2018',
+     "to": 'present'
+   },{
+     "area": 'Lugano, Canton of Ticino, Switzerland',
+     "title": 'Advisor @ Maveric SA',
+     "from": 'Mar 2018',
+     "to": 'present'
+   },{
+     "area": 'Milan Area, Italy',
+     "title": 'Group Digital & Innovation Specialist @ Mediobanca',
+     "from": 'May 2017',
+     "to": 'Jul 2017'
+   },{
+     "area": 'Milan Area, Italy',
+     "title": 'Future Banking Projects @ CheBanca! S.p.A - Gruppo Mediobanca',
+     "from": 'Nov 2015,
+     "to": 'May 2017',
+     "description": 'Focused on innovation, digital trasformation and strategic projects, the Upstream team has main goal to design and analyze mid and long term projects. Upstream is a right mix of people with IT and business skills.'
+   },{
+     "area": 'Milan Area, Italy',
+     "title": 'CTO & Founder @ Cryptodeer',
+     "from": 'Feb 2014,
+     "to": 'Nov 2015',
+     "description": 'Our Start Up main business is deeply changing the way money is seen and thought. Using a virtual currency we created for the purpose, the Tetra, we aim to change the old money management systems with completely new means.'
+   }]
+}
+```
+
+## Dev Skills
+
+```shell
+skillz -u kami -f code,arch,devops
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+   "success":true,
+   "result":[
+     'node.js',
+     'npm',
+     'c',
+     'c++',
+     'python',
+     'md',
+     'docker',
+     'docker-compose',
+     'docker-registry',
+     'gitlab',
+     'cloud-computing',
+     'devops',
+     'cryptocurrencies',
+     'blockchain',
+     'opensource',
+     'problem-solving'
+    ]
+}
+```
