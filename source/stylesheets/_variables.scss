@@ -20,18 +20,19 @@ under the License.
 ////////////////////////////////////////////////////////////////////////////////
 // Use these settings to help adjust the appearance of Slate
 
-// doge #CB9800 | standard slate #CB9800
+// standard slate #2E3336 to doge #CB9800
+// standard slate #CB9800 to doge #A27900
 // BACKGROUND COLORS
 ////////////////////
-$nav-bg: #2E3336 !default;
-$examples-bg: #2E3336 !default;
-$code-bg: #CB9800 !default;
+$nav-bg: #CB9800 !default;
+$examples-bg: #CB9800 !default;
+$code-bg: #A27900 !default;
 $code-annotation-bg: #191D1F !default;
-$nav-subitem-bg: #CB9800 !default;
+$nav-subitem-bg: #A27900 !default;
 $nav-active-bg: #0F75D4 !default;
-$nav-active-parent-bg: #CB9800 !default; // parent links of the current section
+$nav-active-parent-bg: #A27900 !default; // parent links of the current section
 $lang-select-border: #000 !default;
-$lang-select-bg: #CB9800 !default;
+$lang-select-bg: #A27900 !default;
 $lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
 $lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
 $main-bg: #F3F7F9 !default;
