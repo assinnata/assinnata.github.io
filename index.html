@@ -1,0 +1,361 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">shell</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#user" class="toc-h1 toc-link" data-title="User">User</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#whoami" class="toc-h2 toc-link" data-title="whoami">whoami</a>
+                  </li>
+                  <li>
+                    <a href="#experience" class="toc-h2 toc-link" data-title="Experience">Experience</a>
+                  </li>
+                  <li>
+                    <a href="#skills" class="toc-h2 toc-link" data-title="Skills">Skills</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://twitter.com/KamiMatteo' target="_blank">twitter</a></li>
+            <li><a href='https://t.me/kamiteo' target="_blank">telegram</a></li>
+            <li><a href='https://t.me/bitkami' target="_blank">telegram channel</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>Welcome to my documentation style website, here you will find cool stuff about me and my work.</p>
+<h1 id='user'>User</h1><h2 id='whoami'>whoami</h2><pre class="highlight shell tab-shell"><code>whoami
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"result"</span><span class="p">:{</span><span class="w">
+     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="err">'Matteo</span><span class="w"> </span><span class="err">Assinnata'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="err">'Lugano</span><span class="p">,</span><span class="w"> </span><span class="err">Canton</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">Ticino</span><span class="p">,</span><span class="w"> </span><span class="err">Switzerland'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">'kami'</span><span class="p">,</span><span class="w"> </span><span class="err">'bitkami'</span><span class="p">],</span><span class="w">
+     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="err">'CTO</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="err">Founder</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="err">Kami</span><span class="w"> </span><span class="err">Swiss</span><span class="w"> </span><span class="err">SA'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="err">'k@bitkami.io'</span><span class="p">,</span><span class="w"> </span><span class="err">'matteo@assinnata.com'</span><span class="p">]</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves informations like <code>name</code>, <code>area</code>, <code>nickname</code>, <code>title</code>, <code>email</code>.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET https://api.bitkami.io/v1/whoami</code></p>
+
+<aside class="error">
+whoami — you will never get this endpoint working because this is a static website lmao
+</aside>
+<h2 id='experience'>Experience</h2><pre class="highlight shell tab-shell"><code>finger kami
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"result"</span><span class="p">:[{</span><span class="w">
+     </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="err">'Lugano</span><span class="p">,</span><span class="w"> </span><span class="err">Canton</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">Ticino</span><span class="p">,</span><span class="w"> </span><span class="err">Switzerland'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="err">'CTO</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="err">Founder</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="err">Kami</span><span class="w"> </span><span class="err">Swiss</span><span class="w"> </span><span class="err">SA'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"from"</span><span class="p">:</span><span class="w"> </span><span class="err">'Apr</span><span class="w"> </span><span class="mi">2018</span><span class="err">'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="err">'present'</span><span class="w">
+   </span><span class="p">},{</span><span class="w">
+     </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="err">'Lugano</span><span class="p">,</span><span class="w"> </span><span class="err">Canton</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">Ticino</span><span class="p">,</span><span class="w"> </span><span class="err">Switzerland'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="err">'Advisor</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="err">Maveric</span><span class="w"> </span><span class="err">SA'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"from"</span><span class="p">:</span><span class="w"> </span><span class="err">'Mar</span><span class="w"> </span><span class="mi">2018</span><span class="err">'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="err">'present'</span><span class="w">
+   </span><span class="p">},{</span><span class="w">
+     </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="err">'Milan</span><span class="w"> </span><span class="err">Area</span><span class="p">,</span><span class="w"> </span><span class="err">Italy'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="err">'Group</span><span class="w"> </span><span class="err">Digital</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="err">Innovation</span><span class="w"> </span><span class="err">Specialist</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="err">Mediobanca'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"from"</span><span class="p">:</span><span class="w"> </span><span class="err">'May</span><span class="w"> </span><span class="mi">2017</span><span class="err">'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="err">'Jul</span><span class="w"> </span><span class="mi">2017</span><span class="err">'</span><span class="w">
+   </span><span class="p">},{</span><span class="w">
+     </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="err">'Milan</span><span class="w"> </span><span class="err">Area</span><span class="p">,</span><span class="w"> </span><span class="err">Italy'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="err">'Future</span><span class="w"> </span><span class="err">Banking</span><span class="w"> </span><span class="err">Projects</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="err">CheBanca!</span><span class="w"> </span><span class="err">S.p.A</span><span class="w"> </span><span class="err">-</span><span class="w"> </span><span class="err">Gruppo</span><span class="w"> </span><span class="err">Mediobanca'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"from"</span><span class="p">:</span><span class="w"> </span><span class="err">'Nov</span><span class="w"> </span><span class="mi">2015</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="err">'May</span><span class="w"> </span><span class="mi">2017</span><span class="err">'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="err">'Focused</span><span class="w"> </span><span class="err">on</span><span class="w"> </span><span class="err">innovation</span><span class="p">,</span><span class="w"> </span><span class="err">digital</span><span class="w"> </span><span class="err">trasformation</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">strategic</span><span class="w"> </span><span class="err">projects</span><span class="p">,</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">Upstream</span><span class="w"> </span><span class="err">team</span><span class="w"> </span><span class="err">has</span><span class="w"> </span><span class="err">main</span><span class="w"> </span><span class="err">goal</span><span class="w"> </span><span class="err">to</span><span class="w"> </span><span class="err">design</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">analyze</span><span class="w"> </span><span class="err">mid</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">long</span><span class="w"> </span><span class="err">term</span><span class="w"> </span><span class="err">projects.</span><span class="w"> </span><span class="err">Upstream</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">right</span><span class="w"> </span><span class="err">mix</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">people</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">IT</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">business</span><span class="w"> </span><span class="err">skills.'</span><span class="w">
+   </span><span class="p">},{</span><span class="w">
+     </span><span class="s2">"area"</span><span class="p">:</span><span class="w"> </span><span class="err">'Milan</span><span class="w"> </span><span class="err">Area</span><span class="p">,</span><span class="w"> </span><span class="err">Italy'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="err">'CTO</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="err">Founder</span><span class="w"> </span><span class="err">@</span><span class="w"> </span><span class="err">Cryptodeer'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"from"</span><span class="p">:</span><span class="w"> </span><span class="err">'Feb</span><span class="w"> </span><span class="mi">2014</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"to"</span><span class="p">:</span><span class="w"> </span><span class="err">'Nov</span><span class="w"> </span><span class="mi">2015</span><span class="err">'</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="err">'Our</span><span class="w"> </span><span class="err">Start</span><span class="w"> </span><span class="err">Up</span><span class="w"> </span><span class="err">main</span><span class="w"> </span><span class="err">business</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">deeply</span><span class="w"> </span><span class="err">changing</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">way</span><span class="w"> </span><span class="err">money</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">seen</span><span class="w"> </span><span class="err">and</span><span class="w"> </span><span class="err">thought.</span><span class="w"> </span><span class="err">Using</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">virtual</span><span class="w"> </span><span class="err">currency</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">created</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">purpose</span><span class="p">,</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">Tetra</span><span class="p">,</span><span class="w"> </span><span class="err">we</span><span class="w"> </span><span class="err">aim</span><span class="w"> </span><span class="err">to</span><span class="w"> </span><span class="err">change</span><span class="w"> </span><span class="err">the</span><span class="w"> </span><span class="err">old</span><span class="w"> </span><span class="err">money</span><span class="w"> </span><span class="err">management</span><span class="w"> </span><span class="err">systems</span><span class="w"> </span><span class="err">with</span><span class="w"> </span><span class="err">completely</span><span class="w"> </span><span class="err">new</span><span class="w"> </span><span class="err">means.'</span><span class="w">
+   </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all my experiences.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET https://api.bitkami.io/v1/experience</code></p>
+
+<aside class="error">
+whoami — you will never get this endpoint working because this is a static website lmao
+</aside>
+<h2 id='skills'>Skills</h2><pre class="highlight shell tab-shell"><code>skillz -u kami -f code,arch,devops
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"success"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"result"</span><span class="p">:[</span><span class="w">
+     </span><span class="err">'node.js'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'npm'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'c'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'c++'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'python'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'md'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'docker'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'docker-compose'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'docker-registry'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'gitlab'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'cloud-computing'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'devops'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'cryptocurrencies'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'blockchain'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'opensource'</span><span class="p">,</span><span class="w">
+     </span><span class="err">'problem-solving'</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><code>skillz</code> is an hypotetical program which call the <code>skills endpoint</code> and filter the content.<br>
+This endpoint retrieves my skills set.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>GET https://api.bitkami.io/v1/skills</code></p>
+
+<aside class="error">
+whoami — you will never get this endpoint working because this is a static website lmao
+</aside>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">shell</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
