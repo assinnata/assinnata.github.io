@@ -6,9 +6,8 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 toc_footers:
   - <a href='https://twitter.com/KamiMatteo' target="_blank">twitter</a>
-  - <a href='https://instagram.com/bitkami' target="_blank">ig</a>
-  - <a href='https://t.me/kamiteo' target="_blank">tg</a>
-  - <a href='https://t.me/bitkami' target="_blank">tg channel</a>
+  - <a href='https://t.me/kamiteo' target="_blank">telegram</a>
+  - <a href='https://t.me/bitkami' target="_blank">telegram channel</a>
 
 search: true
 ---
@@ -39,6 +38,16 @@ whoami
    }
 }
 ```
+
+This endpoint retrieves informations like `name`, `area`, `nickname`, `title`, `email`.
+
+### HTTP Request
+
+`GET https://<%= config[:api_domain] %>/v1/whoami`
+
+<aside class="error">
+whoami — you will never get this endpoint working because this is a static website lmao
+</aside>
 
 ## Experience
 
@@ -82,7 +91,17 @@ finger kami
 }
 ```
 
-## Dev Skills
+This endpoint retrieves all my experiences.
+
+### HTTP Request
+
+`GET https://<%= config[:api_domain] %>/v1/experience`
+
+<aside class="error">
+whoami — you will never get this endpoint working because this is a static website lmao
+</aside>
+
+## Skills
 
 ```shell
 skillz -u kami -f code,arch,devops
@@ -113,3 +132,14 @@ skillz -u kami -f code,arch,devops
     ]
 }
 ```
+
+`skillz` is an hypotetical program which call the `skills endpoint` and filter the content.  
+This endpoint retrieves my skills set.
+
+### HTTP Request
+
+`GET https://<%= config[:api_domain] %>/v1/skills`
+
+<aside class="error">
+whoami — you will never get this endpoint working because this is a static website lmao
+</aside>
